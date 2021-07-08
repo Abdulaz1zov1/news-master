@@ -1,0 +1,908 @@
+// ========= Global styles =============
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+/* ========== Roboto Fonts =========== */
+@font-face{
+    font-family: "Roboto-Bold";
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family: "Roboto-Regular";
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+/* ========== Inter Fonts =========== */
+@font-face{
+    font-family: "Inter";
+    src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+@font-face{
+    font-family: "Inter-Bold";
+    src: url('../fonts/Inter/static/Inter-Bold.ttf');
+}
+// ======== Header section =======
+
+header{
+    width: 100%;
+    background-color: #006DEE;
+    color: #fff;
+}
+.header-inner{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 86px;
+}
+.logo{
+ display: flex;
+ flex: 1 1 10rem;
+ font-size: 27px;
+}
+.nav-link{
+    display: flex;
+    flex: 3 1 60rem;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+.nav-link a{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto-Regular", sans-serif;
+}
+.header-icon{
+    display: flex;
+    flex: 1 1 10rem;
+    justify-content: space-between;
+    i{
+        font-size: 18px;
+    }
+}
+// ====== Container ======
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    max-height: 3200px;
+}
+// ======= Banner ========
+// ======= Week, Dollor, weather =======
+.reclama-main{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather-week{
+    display: flex;
+    font-family: "Roboto-Regular",sans-serif;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1 1 25rem;
+}
+.reclamainfo_ob-havo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.weather strong:nth-child(1){
+    display: block;
+    font-size: 14px;
+}
+.weather strong:nth-child(2){
+    display: block;
+    font-size: 10px;
+}
+.reclamainfo{
+    display: flex;
+    flex: 2 1 50rem;
+    justify-content: space-evenly;
+}
+.reclamainfo strong{
+    font-size: 10px;
+    font-family: "Roboto-Bold", sans-serif;
+    color: black;
+}
+.fa-caret-up{
+    color: #4BC600;
+}
+.fa-caret-down{
+    color: #E70000;
+}
+
+.date{
+    display: flex;
+    font-family: "Roboto-Regular",sans-serif;
+    font-size: 10px;
+    flex: 1 1 25rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.date-today{
+    font-size: 32px;
+}
+.reclama-line{
+    width: 95%;
+    border: 0.25px solid #E5E5E5;;
+    margin: 0 auto;
+}
+
+// ======== Local news ==========
+.local-news{
+    h1{
+        margin: 15px 0 25px 0;
+        font-family: "Roboto-Bold",sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+    }
+}
+.local-inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.local-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50rem;
+    margin: 10px 10px;
+}
+.local-left-img{
+    width: 100%;
+    height: 273px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.local-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50rem;
+    margin: 10px 10px;
+}
+.local-right-img{
+    width: 100%;
+    height: 273px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.calendar-eye{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto-Regular",sans-serif;
+    margin: 10px 0;
+}
+.calendar{
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+   span{
+       margin-left: 6px;
+       font-size: 14px;
+        color: #808080;
+   }
+}
+.eye{
+    display: flex;
+    align-items: center;
+    span{
+        margin-left: 6px;
+        font-size: 14px;
+        color: #808080;
+    }
+}
+
+.local-text{
+    font-family: "Roboto-Bold",sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+.news-main-text{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+// ========== News Wrapper ============
+.top-news{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-news-img{
+    width: 100%;
+    height: 183px;
+   img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+}
+.card{
+    margin: 10px 10px;
+    flex: 1 1 20rem;
+}
+
+// ===== Reclama Banner =====
+.reclama-banner{
+    img{
+        display: block;
+        width: 80%;
+        margin: 50px auto;
+    }
+}
+// ===== Type News ======
+.cards-news{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-inner{
+    display: flex;
+    flex: 1 1 24rem;
+    margin: 20px 10px;
+}
+.card-img{
+    width: 164px;
+    height: 92px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.card-text{
+    margin-left: 10px;
+    flex: 1 1 20rem;
+}
+.calendar-eye-card{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto-Regular",sans-serif;
+    margin-bottom: 10px;
+}
+.news-type-text{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+@import "respon";
+// === Displays none ====
+.header-icon-mobile{
+    display: none;
+}
+.search-menu{
+    display: none;
+}
+.br{
+    display: none;
+}
+
+// ===== Footer section =======
+footer{
+    width: 100%;
+    margin-top: 50px;
+}
+.footer-top{
+    width: 100%;
+    background-color: #006DEE;
+}
+.footer-top-inner{
+    width: 1080px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.phone-app{
+    flex: 1 1 15rem;
+    position: absolute;
+    top: -75px;
+    z-index: 1;
+    img{
+        width: 97%;
+    }
+}
+.footer-top-space{
+    flex: 1 1 17rem;
+}
+.footer-top-txt{
+    flex: 2 1 35rem;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Roboto-Regular";
+}
+.footer-top-txt h2:nth-child(1){
+    margin-bottom: 15px;
+}
+.install-app{
+    flex: 1 1 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    button{
+        display: flex;
+        align-items: center;
+        width: 192px;
+        height: 64px;
+        border-radius: 15px;
+        margin: 10px 0;
+        border: 1px solid #fff;
+        outline: none;
+        background: #033775;
+        img{
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: left;
+        }
+        h6, h3{
+            color: #ffffff;
+        }
+    }
+}
+// footer - menu
+.footer-bottom{
+    background: #033775;
+}
+.footer-menu{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 55px 0 41px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    div{
+        flex: 1 1 10rem;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 20px;
+        font-family: "Inter-Bold",sans-serif;
+     }
+    a{
+        color: #ffffff;
+        font-family: "Inter",sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 14px;
+    }
+}
+// we about
+.we-about{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 20px 0 25px 0;
+}
+.we-about-header{
+    display: flex;
+    margin-bottom: 16px;
+    h2{
+        flex: 1;
+        text-align: center;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        font-family: "Inter-Bold", sans-serif;
+    }
+    .messenger{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        a{
+            margin-left: 15px;
+        }
+        img{
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+.we-about-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 53px;
+    h1{
+      color: #fff;
+      font-family: "Inter-Bold", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+    }
+    a{
+        color: #fff;
+        font-family: "Inter",sans-serif;
+        font-size: 14px;
+    }
+}
+.we-about-info{
+    color: #ffffff;
+    font-family: "Inter",sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+}
+// For mobile 
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .header-inner{
+        width: 95%;
+    }
+    .nav-link{
+        flex: 1 1 40rem;
+    }
+    .nav-link a{
+        font-size: 16px;
+    }
+    .banner{
+        img{
+            width: 100%;
+        }
+    }
+    // footer section mobile
+    .footer-top-inner{
+        width: 90%;
+    }
+    .footer-menu{
+        width: 90%;
+    }
+    .we-about{
+        width: 90%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-inner{
+        width: 95%;
+    }
+    .nav-link{
+        flex: 1 1 40rem;
+    }
+    .nav-link a{
+        font-size: 14px;
+    }
+    .banner{
+        img{
+            width: 100%;
+        }
+    }
+    // footer section mobile
+    .footer-top-inner{
+        width: 95%;
+        height: 209px;
+        .phone-app{
+            img{
+                width: 72%;
+            }
+        }
+        .footer-top-txt{
+            font-size: 12px;
+        }
+        .install-app button{
+            width: 175px;
+            height: 57px;
+        }
+    }
+    .footer-menu{
+        width: 95%;
+    }
+    .footer-menu h3 {
+        font-size: 16px;
+    }
+    .we-about{
+        width: 95%;
+    }
+    .we-about-header h2 {
+        font-size: 20px;
+    }
+    .we-about-menu{
+        margin-bottom: 27px;
+        h1{
+            font-size: 29px;
+        }
+        a{
+            font-size: 13px;
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo{
+        margin-left: 20px;
+    }
+    .header-icon-mobile{
+        display: flex;
+        width: 80px;
+        justify-content: space-between;
+        position: absolute;
+        right: 19%;
+        i{
+            font-size: 18px;
+        }
+    }
+    // Burger 
+    header{
+        position: relative;
+    }
+    .burger{
+        position: absolute;
+        top: 37%;
+        right: 5%;
+        z-index: 2;
+    }
+    .burger span{
+        padding: 1.5px 13px;
+        background: #fff;
+        margin: 3px 0px;
+        border-radius: 5px;
+        display: block;
+        transition: all 0.5s ease;
+    }
+    
+    .nav-link{
+        background: #006DEE;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: transform 1s ease;
+        z-index: 1;
+    }
+
+    .nav-link a{
+        color: white;
+        font-size: 18px;
+    }
+    .search-menu{
+        display: block;
+    }
+    .search-menu input{
+        padding: 9px 30px;
+        border: none;
+        border-radius: 5px;
+    }
+    .nav-open{
+        transform: translateX(-100%);
+    }
+    .toggle .line1{
+        transform: rotateZ(45deg) translateY(300%);
+        background: #ffffff;
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: #ffffff;
+    }
+    .header-icon{
+        display: none;
+    }
+    .banner{
+        img{
+            width: 100%;
+        }
+    }
+    // ==== Reklama ======
+    .reclama-main{
+        flex-direction: column;
+        height: 116px;
+    }
+    .weather-week{
+        flex: 1 1 5rem;
+    }
+    .reclamainfo{
+        display: flex;
+        flex: 1 1 1rem;
+        i{
+            margin: 0 15px;
+        }
+    }
+    .br{
+        display: none;
+    }
+    .local-news h1{
+        text-align: center;
+    }
+    .local-inner{
+        flex-wrap: wrap;
+    }
+    .card{
+        flex: 1 1 16rem;
+    }
+    // footer section mobile
+    .footer-top-inner{
+        width: 95%;
+        height: 180px;
+        .phone-app{
+            top: -50px;
+            img{
+                width: 54%;
+            }
+        }
+        .footer-top-txt{
+            font-size: 10px;
+        }
+        .install-app button{
+            width: 130px;
+            height: 45px;
+            img{
+                width: 22px;
+                margin-left: 13px;
+                margin-right: 13px;
+            }
+            h3{
+                font-size: 12px
+            }
+        }
+    }
+    .footer-menu{
+        width: 95%;
+        flex-wrap: wrap;
+        div{
+            margin: 8px;
+            flex: 1 1 8rem;
+        }
+    }
+    .footer-menu h3 {
+        font-size: 16px;
+    }
+    .we-about{
+        width: 95%;
+    }
+    .we-about-header h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    .messenger{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .we-about-menu{
+        margin-bottom: 27px;
+        flex-direction: column;
+        li{
+            margin: 5px;
+        }
+        h1{
+            font-size: 24px;
+        }
+        a{
+            font-size: 13px;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    // Logo
+    .logo{
+        margin-left: 20px;
+    }
+    .header-icon-mobile{
+        display: flex;
+        width: 80px;
+        justify-content: space-between;
+        position: absolute;
+        right: 19%;
+        i{
+            font-size: 18px;
+        }
+    }
+    // Burger 
+    header{
+        position: relative;
+    }
+    .burger{
+        position: absolute;
+        top: 37%;
+        right: 5%;
+        z-index: 2;
+    }
+    .burger span{
+        padding: 1.5px 13px;
+        background: #fff;
+        margin: 3px 0px;
+        border-radius: 5px;
+        display: block;
+        transition: all 0.5s ease;
+    }
+    
+    .nav-link{
+        background: #006DEE;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: transform 1s ease;
+        z-index: 1;
+    }
+
+    .nav-link a{
+        color: white;
+        font-size: 18px;
+    }
+    .search-menu{
+        display: block;
+    }
+    .search-menu input{
+        padding: 9px 30px;
+        border: none;
+        border-radius: 5px;
+    }
+    .nav-open{
+        transform: translateX(-100%);
+    }
+    .toggle .line1{
+        transform: rotateZ(45deg) translateY(300%);
+        background: #ffffff;
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: #ffffff;
+    }
+    .header-icon{
+        display: none;
+    }
+    .banner{
+        img{
+            width: 100%;
+        }
+    }
+
+    // ==== Reklama ======
+    .reclama-main{
+        flex-direction: column;
+        height: 116px;
+    }
+    .weather-week{
+        flex: 1 1 5rem;
+    }
+    .reclamainfo{
+        display: flex;
+        flex: 1 1 1rem;
+        i{
+            margin: 0 15px;
+        }
+    }
+
+
+    .br{
+        display: block;
+    }
+
+    .date{
+        margin: 5px 0;
+        flex: 1 1 6rem;
+    }
+    .date-today{
+        font-size: 24px;
+    }
+    // === Local news ====
+    .local-inner{
+        flex-wrap: wrap;
+    }
+    .local-news{
+        h1{
+            text-align: center;
+        }
+    }
+    .local-left-img{
+        height: 183px;
+    }
+    .local-right-img{
+        height: 183px;
+    }
+    .local-text{
+        font-size: 14px;
+    }
+    .news-main-text{
+        font-size: 14px;
+    }
+    .news-type-text{
+        font-size: 14px;
+    }
+
+    // footer section mobile
+    .footer-top-inner{
+        width: 95%;
+        height: 108px;
+        .phone-app{
+            top: -30px;
+            left: -14px;
+            img{
+                width: 34%;
+            }
+        }
+        .footer-top-txt{
+            font-size: 7px;
+        }
+        .install-app button{
+            width: 100px;
+            height: 35px;
+            border-radius: 7px;
+            margin: 6px 0;
+            img{
+                width: 18px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            h6{
+                font-size: 8px;
+            }
+            h3{
+                font-size: 10px;
+            }
+        }
+    }
+    .footer-menu{
+        width: 95%;
+        flex-wrap: wrap;
+        div{
+            margin: 8px;
+            flex: 1 1 8rem;
+        }
+    }
+    .footer-menu h3 {
+        font-size: 16px;
+    }
+    .we-about{
+        width: 95%;
+    }
+    .we-about-header h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    .messenger{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .we-about-menu{
+        margin-bottom: 27px;
+        flex-direction: column;
+        li{
+            margin: 5px;
+        }
+        h1{
+            font-size: 24px;
+        }
+        a{
+            font-size: 13px;
+        }
+    }
+  }
+
+  

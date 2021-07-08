@@ -1,0 +1,69 @@
+<div class="content">
+  <div class="container-fluid">
+
+    <div class="page-title-box">
+      <div class="row align-items-center">
+
+        <div class="col-sm-6">
+          <h4>Add new moderator</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+
+            <form action="/new/add" method="POST" ref='uploadForm' id='uploadForm' encType="multipart/form-data">
+
+              <div class="form-group row">
+                <label for="example-text-input" class="col-sm-12 col-form-label">Title</label>
+                <div class="col-md-10">
+                  <input type="text" id="form" class="form-control" name="title" required>
+                </div>
+
+                <label for="example-text-input" class="col-sm-12 col-form-label">Categories</label>
+                <div class="col-md-10">
+                  <select class="form-control col-md-12 pr-3" name="categoryID">
+                      <option value="jahon">Jaxon yangiliklari</option>
+                      <option value="mahalliy">Maxalliy yangiliklar</option>
+                      <option value="millioner">Millioner</option>
+                      <option value="ijtimoiy">Ijtimoiy xayot</option>
+                      <option value="biznes">Biznes laboratoriya</option>
+                      <option value="lifestyle">Lifestyle</option>
+                      <option value="export-xaridor">Expert-xaridor</option>
+                      <option value="reyting">Reyting</option>
+                      <option value="fotomuxbir">Fotomuxbir</option>
+                      <option value="raqobat">Raqobat</option>
+                  </select>
+                </div>
+                <label for="example-text-input" class="col-sm-12 col-form-label">Descrtiption</label>
+                <div class="col-md-10">
+                  <div class="form-group">
+                    <textarea class="summernote"  name="description" cols="30" rows="10"></textarea>
+                </div>
+                </div>
+                <label for="example-text-input" class="col-sm-12 col-form-label">Tag</label>
+                <div class="col-md-10">
+                  <input type="text" id="form" class="form-control" name="tag" required>
+                </div>
+                <div class="mb-3 mt-3 col-sm-12">
+                  <label for="formFile" class="form-label">Yangilik uchun rasm</label> <br />
+                  <input type="file" name="image" multiple>
+                </div>
+              </div>
+              <button type="submit" style="font-size: 15px; padding: 6px 15px;"
+                class="btn btn-success btn-sm float-right ml-3 waves-effect waves-light">
+                Save
+                </i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

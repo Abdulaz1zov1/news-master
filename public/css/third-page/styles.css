@@ -1,0 +1,162 @@
+h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+/*--------------------------------------------------*/
+
+.page_header_reclamainfo{
+    margin-top: 10px;
+}
+
+.reclamainfo_haftakuni {
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: #000000;
+}
+
+
+.reclamainfo_ob-havo_text {
+    width: 100px;
+    height: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: capitalize;
+    color: #000000;
+    position: relative;
+    top: -60px;
+    left: 290px;;
+}
+
+.fa-caret-up {
+    color: limegreen;
+}
+
+.fa-caret-down {
+    color: red;
+}
+.courses{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.courses strong {
+    width: 65.29px;
+    height: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: black;
+    margin-left: 5px;
+}
+
+
+.date h4 {
+    position: relative;
+    left: 970px;
+    top: -115px;
+}
+
+.date p {
+    position: relative;
+    top: -155px;
+    left: 1005px;
+}
+
+.page_header_end {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 0;
+    border: 0.25px solid #7E7E7E;
+    opacity: .2;
+}
+
+/*-----------------------------------------*/
+
+.page_middle_img  {
+   width: 100%;
+}
+.page_middle_img  {
+    margin-left: 50px;
+ }
+
+.page_middle_text {
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
+    color: #333333;
+    word-break: break-all;
+    text-align: left;
+}
+
+.page_middle2_img2 img{
+   margin-left: 50px;
+   margin-top: 50px;
+}
+
+
+.page_middle2_h1_2 {
+    position: relative;
+    width: 750px;
+    height: 34px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
+    color: #000000;
+    top: 500px;
+    left: 275px;
+}
+
+
+.page_middle3_text_3 {
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
+    color: #333333;
+    word-break: break-all;
+    text-align: left;
+}
+
+.page_my_patnyor_text {
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
+    color: #333333;
+    word-break: break-all;
+    text-align: left;
+    padding-bottom: 100px;
+}
+/*---------------------------------------------------*/

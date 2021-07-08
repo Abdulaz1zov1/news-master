@@ -1,0 +1,72 @@
+<!-- <div class="row ">
+    <div class="col-md-6 mt-3 text-white">
+        <div class="card bg-white">
+            <div class="card-heading p-4 bg-primary ">
+                <div class="mini-stat-icon  float-right">
+                    <i class="mdi mdi-account-box-multiple bg-primary  text-white" style="border: 2px solid white"></i>
+                </div>
+                <div>
+                    <h5>Umumiy  <br/>moderatorlar  <br/> miqdori</h5>
+                </div>
+                <h3 class="mt-2"> <%= moderator %>  </h3>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-md-6 mt-3 text-white">
+        <div class="card bg-white">
+            <div class="card-heading p-4 bg-success ">
+                <div class="mini-stat-icon  float-right">
+                    <i class="mdi mdi-file-document-box bg-success  text-white" style="border: 2px solid white"></i>
+                </div>
+                <div>
+                    <h5>Umumiy  <br/> yangiliklar <br/> miqdori</h5>
+                </div>
+                <h3 class="mt-2"><%= yangilik %></h3>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+
+</div> -->
+
+
+<div class="row ">
+    <div class="col-xl-12">
+        <div class="card m-b-30 ">
+            <div class="card-body">
+                <h3 class="mt-0 header-title mb-4">So'ngi yangiliklar</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered text-center">
+                        <thead class="thead-dark">
+                                <th class="font-15" scope="col">Kategoriya</th>
+                                <th class="font-15" scope="col">Sarlavha</th>
+                                <th class="font-15" scope="col">Sana</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (let item of lastFiveNews) { %>
+                            <tr>
+                                <td><%= item.title %></td>
+                                <td><%= item.categoryID %></td>
+                                <td class="font-14"><%= moment(item.date).format("DD/MM/YYYY - hh:mm:ss") %></td>
+
+                            </tr>
+                            <% } %> 
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

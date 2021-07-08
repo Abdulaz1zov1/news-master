@@ -1,0 +1,9 @@
+.idea
+node_modules
+/node_modules
+./node_modules
+../node_modules
+../public/uploads
+./public/uploads
+/public/uploads
+public/uploads

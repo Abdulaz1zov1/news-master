@@ -1,0 +1,70 @@
+<div class="row" style="padding-top: 15px;">
+ <div class="col-xl-12">
+   <div class="card ">
+     <div class="card-body">
+      <div class="top-headers">
+       <h4 class="mt-0 mb-4" style="font-size: 22px;">Moderatorlar</h4>
+       <a href="/adding/moderator" class="btn btn-success ">Qo'shish</a>
+      </div>
+       
+       <div class="table-responsive">
+         <table class="table table-hover table-bordered text-center">
+           <thead class="thead-dark">
+             <tr>
+               <th style="font-size: 13px;" scope="col">Rasm</th>
+               <th style="font-size: 13px;" scope="col">Moderator</th>
+               <th style="font-size: 13px;" scope="col">Pochta</th>
+               <th style="font-size: 13px;" scope="col">Telefon</th>
+               <th style="font-size: 13px;" scope="col">Yaratilgan sana</th>
+               <th style="font-size: 13px;" scope="col" colspan="2">Sozlamalar</th>
+
+             </tr>
+           </thead>
+           <tbody>
+             <% for (const item of user) { %>
+               <tr>
+                 <td>
+                   <div>
+                     <img style="border-radius: 50%; width: 50px; height: 50px;" src="/uploads/adminAvatar/<%= item.photo %>" name="photo" >
+                   </div>
+                 </td>
+                 <td>
+                   <span style="font-size: 13px; color: #000;">
+                     <%= item.name %>
+                   </span>
+                 </td>
+                 <td>
+                   <span style="font-size: 13px; color: #000;">
+                     <%= item.email %>
+                   </span> 
+                 </td>
+                 <td>
+                   <span style="font-size: 13px; color: #000;">
+                     <%= item.phone %>
+                   </span> 
+                 </td>
+                 <td>
+                  <span style="font-size: 13px; color: #000;">
+                    <%= moment(item.date).format("DD/MM/YYYY - hh:mm:ss") %>
+                  </span> 
+                </td>
+                 <td>
+                   <div>
+                       <a href="<%=`/moderator/${item._id}`%>" class="btn btn-primary">
+                        <i class="mdi mdi-pen text-white" style="font-size: 16px;"></i>
+                       </a>
+                   </div>
+                 </td>
+               </tr>
+             <% } %>
+           </tbody>
+         </table>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</div>
+
+
+

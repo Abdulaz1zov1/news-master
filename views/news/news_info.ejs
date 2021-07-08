@@ -1,0 +1,60 @@
+<div class="row pt-3">
+ <div class="col-md-10">
+  <div class="card m-b-30">
+   <div class="card-body">
+
+    <ul class="nav nav-tabs" role="tablist">
+     <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
+       <span class="d-none d-md-block">Rasm</span><span class="d-block d-md-none"><i
+         class="mdi mdi-home-variant h5"></i></span>
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#profile" role="tab">
+       <span class="d-none d-md-block">Sarlavha</span><span class="d-block d-md-none"><i
+         class="mdi mdi-account h5"></i></span>
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+       <span class="d-none d-md-block">Kategoriya</span><span class="d-block d-md-none"><i
+         class="mdi mdi-email h5"></i></span>
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+       <span class="d-none d-md-block">Tavsif</span><span class="d-block d-md-none"><i
+         class="mdi mdi-settings h5"></i></span>
+      </a>
+     </li>
+    </ul>
+    <div class="tab-content">
+
+     <div class="tab-pane active p-3" id="home" role="tabpanel">
+      
+      <p class="mb-0">
+       <img class="col-md-12" src="/uploads/news/<%= information.image %>" name="photo">
+      </p>
+     </div>
+     <div class="tab-pane p-3" id="profile" role="tabpanel">
+      <p class="mb-0">
+       <%= information.title %>
+      </p>
+     </div>
+     <div class="tab-pane p-3" id="messages" role="tabpanel">
+      <p class="mb-0">
+       <%= information.categoryID %>
+      </p>
+     </div>
+     <div class="tab-pane p-3" id="settings" role="tabpanel">
+      <p class="mb-0">
+       <%= information.description %>
+      </p>
+     </div>
+
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title><%= title  %></title>
+        <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <link rel="shortcut icon" href="/images/favicon.ico">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div class="accountbg"></div>
+        
+        <div class="wrapper-page">
+                <div class="card card-pages shadow-none">
+    
+                    <div class="card-body">
+                        
+                        <h5 class="font-18 text-center">Authorization</h5>
+    
+                        <form class="form-horizontal m-t-30" method="POST"  action="/admin/login" >
+    
+                            
+                                        <label>Enter your email</label>
+                                    <input class="form-control" name="email" type="email" required>
+                                
+    
+                       
+                                        <label>Enter your password</label>
+                                    <input class="form-control" type="password" name="password"  required>
+                                
+    
+                          
+    
+                    
+                                    
+                                    <button type="submit" class="btn btn-primary btn-block btn-lg mt-3 waves-effect waves-light" >Log In</button>
+                               
+    
+                            
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/metismenu.min.js"></script>
+        <script src="/js/jquery.slimscroll.js"></script>
+        <script src="/js/waves.min.js"></script>
+        <script src="/js/app.js"></script>
+        
+    </body>
+
+</html>

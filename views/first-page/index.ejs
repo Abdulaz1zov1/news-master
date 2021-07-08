@@ -1,0 +1,299 @@
+<!-- MAIN SECTION -->
+<section id="news">
+
+    <div class="container">
+
+        <div class="row mt-4">
+
+            <div class="col-lg-6 col-sm-12">
+                <h2>Сунгги янгиликлар</h2>
+                <% for (const item of lastNew) { %>
+                <div class="card">
+                   
+                        <div class="card-header">
+                            <!-- <img class="w-100" src="./images/money.jpg" alt=""> -->
+                            <img class="w-100" src="/uploads/news/<%= item.image %>" name="photo">
+                        </div>
+                        <div class="card-body">
+                            <div class="small-info d-flex mt-2">
+                                <p> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                                <p> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                            </div>
+                            <h2><%= item.title %> </h2>
+                            <p><%= item.description %></p>
+                        </div>
+                </div>
+                <% } %>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+
+                <div class="main-news">
+                    <h2>Асосий янгиликлар</h2>
+                    <% for (const item of mainNew) { %>
+                    <div class="news-box d-flex justify-content-around m">
+                        <!-- <img class="w-100" src="./images/person.jpg" alt=""> -->
+                        <img class="w-50" src="../uploads/news/<%= item.image %>" />
+                        <div class="ml-3">
+                            <div class="small-info d-flex">
+                                <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                                <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                            </div>
+                            <p class="main-news-text"><%= item.title %></p>
+                        </div>
+                    </div>
+                    <% } %>
+                    <hr>
+                </div>
+            </div>
+
+
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section id="jahon-news">
+    <div class="container ">
+        <h2 class="mt-3">Жахон янгиликлари</h2>
+        <div class="row">
+            <% for (const item of worldNew) { %>
+            <div class="col-3">
+                <div class="card ">
+                   
+                    <div class="card-header">
+                        <!-- <img class="w-100" src="./images/amazon.png" alt=""> -->
+                        <img class="w-50" src="../uploads/news/<%= item.image %>" />
+                    </div>
+                    <div class="card-body">
+                        <div class="small-info d-flex mt-3 mb-2">
+                            <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                            <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                        </div>
+                        <p><%= item.title %></p>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+
+        <!-- <div class="borderedd mt-4 mb-5"> -->
+        <div class="row mt-4 mb-5">
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <h1>Karvon</h1>
+            </div>
+            <div class="col-4 d-flex justify-content-center align-items-center coloredd ">
+                <h3>Bizni ijtimoiy tarmoqlarda kuzating</h3>
+            </div>
+            <div class="col-4 d-flex justify-content-around align-items-center">
+                <img src="./icons/send 1.svg" alt="">
+                <a href="#">
+                    <h2>Telegram</h2>
+                </a>
+            </div>
+        </div>
+
+        <!-- </div> -->
+    </div>
+</section>
+
+<section id="mahalliy-news">
+    <div class="container">
+        <h1>Маҳаллий янгиликлар</h1>
+        <div class="row">
+            <% for (const item of localNew) { %>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text"><%= item.title %></p>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</section>
+
+<section id="business">
+    <div class="container">
+        <h1 class="mt-4">Бизнес</h1>
+        <div class="row">
+            <% for (const item of businessNew) { %>
+            <div class="col-6 mb-3">
+                <div class="business-box d-flex">
+                    <!-- <img width="70%" height="auto" src="./images/1.png" alt=""> -->
+                    <img width="50%" height="auto"  src="/uploads/news/<%= item.image %>" name="photo">
+                    <div class="ml-3">
+                        <div class="small-info d-flex">
+                            <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                            <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                        </div>
+                        <p class="business-text mt-3"><%= item.title %></p>
+                    </div>
+
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</section>
+
+<section id="reklama">
+    <div class="container">
+        <img class="w-90 mt-4 mb-4 mx-auto d-block" src="./images/Ads.png" alt="">
+    </div>
+
+</section>
+
+<section id="mahalliy-news">
+    <div class="container">
+        <h1>Маҳаллий янгиликлар</h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+            <div class="col-4">
+                <div class="small-info d-flex mt-3 mb-2">
+                    <p class="mb-0"> <span><img src="./icons/Calindar.png" alt=""></span> 14.09.2020</p>
+                    <p class="mb-0"> <span><img src="./icons/Eye.png" alt=""></span> 268 473</p>
+                </div>
+                <p class="mahalliy-news-text">Ўзбекистонга коронавирусга қарши курашда ёрдам бериш учун яна 35 нафар
+                    россиялик мутахассис келди</p>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+</section>
+
+<section id="refresh">
+    <a href="#">
+        <p> <span><img src="./icons/refresh.svg" alt=""></span> Купрок янгилик куриш </p>
+    </a>
+</section>
+
+<section id="mobile-karvon" class="bg-colored mt-4">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-3 mobile">
+                <img src="./images/smartphone.png" alt="">
+            </div>
+            <div class="col-6">
+                <p>Ҳар доим хабардор бўлинг!</p>
+                <p>karvon.uz мобил иловаларини кўчириб олинг ва барча янгиликлар сиз билан</p>
+            </div>
+            <div class="col-3 ">
+                <div class="wrap p-2 w-75 mb-3">
+                    <a href="#" class="d-flex ml-2">
+                        <img src="./icons/apple.svg" alt="">
+                        <div class="ml-4">
+                            <p>Yuklab oling</p>
+                            <img src="./icons/App Store.svg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="wrap p-2 w-75 ">
+                    <a href="#" class="d-flex ml-2">
+                        <img src="./icons/playMar.svg" alt="">
+                        <div class="ml-4">
+                            <p>Yuklab oling</p>
+                            <img src="./icons/Google Play.svg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

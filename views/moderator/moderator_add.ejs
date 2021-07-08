@@ -1,0 +1,59 @@
+<div class="content">
+ <div class="container-fluid">
+
+  <div class="page-title-box">
+   <div class="row align-items-center">
+
+    <div class="col-sm-6">
+     <h4>Yangi moderator qo'shish</h4>
+    </div>
+
+   </div>
+  </div>
+
+  <div class="row">
+   <div class="col-md-12">
+    <div class="card">
+     <div class="card-body">
+
+      <form action="/moderator/register" method="POST" ref='uploadForm' id='uploadForm' encType="multipart/form-data" >
+
+        
+       <div class="form-group row">
+        <label for="example-text-input" class="col-sm-12 col-form-label">Moderator ismi</label>
+        <div class="col-sm-6">
+         <input type="text" id="form" class="form-control" name="name" required>
+        </div>
+        <label for="example-text-input" class="col-sm-12 col-form-label">Pochta</label>
+        <div class="col-sm-6">
+         <input type="email" id="form" class="form-control" name="email" required>
+        </div>
+        <label for="example-text-input" class="col-sm-12 col-form-label">Parol</label>
+        <div class="col-sm-6">
+         <input type="password" id="form" class="form-control" name="password" required>
+        </div>
+        <label for="example-text-input" class="col-sm-12 col-form-label">Telefon</label>
+        <div class="col-sm-6 form-group">
+          <input type="text" data-mask="+999 99 999-99-99" class="form-control" name="phone" required>
+          <span class="font-13 text-muted">+998 99 123-45-67</span>
+        </div>
+        <label for="example-text-input" class="col-sm-12 col-form-label">Moderator uchun rasm</label>
+        <div class="col-sm-6 form-group">
+          <input type="file"  name="photo" multiple>
+        </div>
+         
+        <input value="moderator" type="text" id="form" class="form-control" name="role" required hidden>
+       </div>
+       <button type="submit" style="font-size: 15px; padding: 6px 15px;" 
+        class="btn btn-success btn-sm float-right ml-3 waves-effect waves-light">
+         Saqlash
+        </i>
+       </button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+
+ </div>
+</div>

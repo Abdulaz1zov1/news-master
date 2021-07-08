@@ -1,0 +1,33 @@
+<div class="page_bgi_open">
+    <div class="page_border">
+        <div class="page_border_welcome">
+            <p>Кириш</p>
+        </div>
+        <div class="page_blue_google">
+            <h3>G</h3>
+            <p>Google</p>
+        </div>
+        <div class="page_email_search">
+            <p>ёки е-маил оркали киринг </p>
+        </div>
+        <form class="form-horizontal m-t-30" method="POST" action="/admin/login">
+            <div class="page_input">
+                <input type="email" name="email" placeholder="Email ёки телефон рақам" required>
+            </div>
+            <div class="page_input-2">
+                <input type="password" name="password" placeholder="Паролни теринг" required>
+            </div>
+            <div class="page_blue_welcome_border">
+
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <button type="submit">Кириш</button>
+
+            </div>
+        </form>
+        <div class="page_white_blue_text">
+            <p>Киришни амалга оширишa <a href="index.html"> хизматдан фойдаланиш шартлари</a> ва <a
+                    href="index.html">махфийлик сиёсатини</a> қабул қилган
+                ҳисобланади. </p>
+        </div>
+    </div>
+</div>

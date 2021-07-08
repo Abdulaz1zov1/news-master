@@ -1,0 +1,299 @@
+@media (min-width: 1281px) {
+ .container,
+ .page_header_reclamainfo,
+ .page_header_end,
+ .page_middle_wrapper,
+ .page_middle_wrapper_2,
+ .page_my_patnyor_text
+ {
+  width: 100%;
+ }
+ .page_header_banner img
+ {
+  width: 100%;
+  margin: 0 auto;
+ }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+ .container,
+ .page_header_reclamainfo,
+ .page_header_end,
+ .page_middle_wrapper,
+ .page_middle_wrapper_2,
+ .page_my_patnyor_text
+ {
+  width: 100%;
+ }
+ .page_header_banner{
+  width: 100%;
+  padding: 0 50px;
+ }
+ .page_header_banner img
+ {
+  width: 930px;
+  margin: 0 auto;
+ }
+ .page_middle_img{
+  width: 100%;
+ }
+ .page_middle_img img{
+  width: 930px;
+  margin: 0 auto;
+ }
+ .page_middle_text{
+  font-size: 15px;
+ }
+ .page_middle_wrapper_2,
+ .page_middle2_img2{
+  width: 100%;
+ }
+ .page_middle2_img2 img{
+  width: 930px;
+ }
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  font-size: 15px;
+  padding-right: 100px
+  ;
+ }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ .container,
+ .page_header_reclamainfo,
+ .page_header_end,
+ .page_middle_wrapper,
+ .page_middle_wrapper_2,
+ .page_my_patnyor_text{
+  width: 100%;
+ }
+ .page_header_reclamainfo{
+  font-size: 10px;
+ }
+ .page_header_banner{
+  width: 100%;
+  padding: 0 50px;
+ }
+ .page_header_banner img
+ {
+  width: 700px;
+  margin: 0 auto;
+ }
+ .page_middle_img{
+  width: 100%;
+ }
+ .page_middle_img img{
+  width: 700px;
+  margin: 0 auto;
+ }
+ .page_middle_text{
+  font-size: 12px;
+ }
+ .page_middle_wrapper_2,
+ .page_middle2_img2{
+  width: 100%;
+ }
+ .page_middle2_img2 img{
+  width: 700px;
+ }
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  font-size: 12px;
+  padding-right: 100px;
+ }
+ .page_middle_text,
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  padding-left: 100px;
+ }
+
+
+
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+ .container,
+ .page_header_reclamainfo,
+ .page_header_end,
+ .page_middle_wrapper,
+ .page_middle_wrapper_2,
+ .page_my_patnyor_text{
+  width: 100%;
+ }
+ .courses{
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+ }
+
+
+ .page_header_reclamainfo{
+  font-size: 10px;
+ }
+ .page_header_banner{
+  width: 100%;
+  padding: 0 50px;
+ }
+ .page_header_banner img
+ {
+  display: none;
+ }
+ .page_middle_img{
+  width: 100%;
+ }
+ .page_middle_img img{
+  display: none;
+ }
+ .page_middle_text{
+  font-size: 12px;
+ }
+ .page_middle_wrapper_2,
+ .page_middle2_img2{
+  width: 100%;
+ }
+ .page_middle2_img2 img{
+  display: none;
+ }
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  font-size: 12px;
+  padding-right: 100px;
+ }
+ .page_middle_text,
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  padding-left: 100px;
+ }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 599px) {
+
+ .container,
+ .page_header_reclamainfo,
+ .page_header_end,
+ .page_middle_wrapper,
+ .page_middle_wrapper_2,
+ .page_my_patnyor_text{
+  width: 100%;
+ }
+ .courses{
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+ }
+
+
+ .page_header_reclamainfo{
+  font-size: 10px;
+ }
+ .page_header_banner{
+  width: 100%;
+  padding: 0 50px;
+ }
+ .page_header_banner img
+ {
+  display: none;
+ }
+ .page_middle_img{
+  width: 100%;
+ }
+ .page_middle_img img{
+  display: none;
+ }
+ .page_middle_text{
+  font-size: 12px;
+ }
+ .page_middle_wrapper_2,
+ .page_middle2_img2{
+  width: 100%;
+ }
+ .page_middle2_img2 img{
+  display: none;
+ }
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  font-size: 12px;
+  padding-right: 0px;
+ }
+ .page_middle_text,
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  padding-left: 20px;
+  padding-right: 20px;
+  word-break: keep-all;
+ }
+ 
+
+}
+@media (min-width: 320px) and (max-width: 479px) {
+
+ .container,
+ .page_header_reclamainfo,
+ .page_header_end,
+ .page_middle_wrapper,
+ .page_middle_wrapper_2,
+ .page_my_patnyor_text{
+  width: 100%;
+ }
+ .courses{
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+ }
+
+ .page_header_reclamainfo{
+  font-size: 10px;
+ }
+ .page_header_banner{
+  width: 100%;
+  padding: 0 50px;
+ }
+ .page_header_banner img
+ {
+  display: none;
+ }
+ .page_middle_img{
+  width: 100%;
+ }
+ .page_middle_img img{
+  display: none;
+ }
+ .page_middle_text{
+  font-size: 12px;
+ }
+ .page_middle_wrapper_2,
+ .page_middle2_img2{
+  width: 100%;
+ }
+ .page_middle2_img2 img{
+  display: none;
+ }
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  font-size: 12px;
+  padding-right: 0px;
+ }
+ .page_middle_text,
+ .page_my_patnyor_text,
+ .page_middle3_text_3{
+  padding-left: 20px;
+  padding-right: 20px;
+  word-break: keep-all;
+ }
+
+
+}
